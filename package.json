@@ -1,7 +1,0 @@
-{
-  "name": "todos",
-  "private": true,
-  "scripts": {
-    "deploy": "DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy shari-simple-posts.meteorapp.com --settings settings.json",
-  }
-}
