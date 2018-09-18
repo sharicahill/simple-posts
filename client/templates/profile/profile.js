@@ -13,10 +13,11 @@ Template.profile.events({
           var imageLoc = '/cfs/files/ProfileImages/'+result._id;
 
           UserImages.insert({
-            userId: Meteor.userId(),
-            username: Meteor.user().username,
-            image: imageLoc
-          });
+						userId: Meteor.userId(),
+						username: Meteor.user().username,
+						image: imageLoc,
+            createdAt: new Date()
+					});
 
           Router.go('/');
         }
